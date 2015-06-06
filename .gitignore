@@ -1,8 +1,15 @@
 Debug/
 Release/
+<<<<<<< HEAD
 .opensdf
 .sdf
 .v12.suo
 *.user
 *.sdf
 *.suo
+=======
+logreader.opensdf
+logreader.sdf
+logreader.v12.suo
+*.user
+>>>>>>> 9ad6461096c6e7bd55c93ad6708f2d90925b6f0e
