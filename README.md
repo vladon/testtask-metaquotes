@@ -6,26 +6,26 @@ Want it in Russian? Scroll down.
 
 ## C++ programmer test task
 
-Write a class on pure C++ which able to quickly read text logs of enormous size (tens or hundreds MiBs) and output lines which meet simple regexp criteria, at least operators `&#42;` and `?`. A wider range of options is welcome.
+Write a class on pure C++ which able to quickly read text logs of enormous size (tens or hundreds MiBs) and output lines which meet simple regexp criteria, at least operators `*` and `?`. A wider range of options is welcome.
 
-- `&#42` - sequence of any characters of unlimited length;
+- `*` - sequence of any characters of unlimited length;
 - `?` - exactly one any symbol.
 
 Following masks must work correctly:
 
-- `&#42;Some&#42;`,
-- `&#42;Some`,
-- `Some&#42;`,
-- `&#42;&#42;&#42;&#42;&#42;Some&#42;&#42;&#42;`.
+- `*Some*`,
+- `*Some`,
+- `Some*`,
+- `*****Some***`.
 
-There are no restrictions of `&#42` position in the mask.
+There are no restrictions of `*` position in the mask.
 
 The result of the search should be lines that satisfy the mask.
 
 Examples:
 
-1. Mask `&#42;abc&#42;` selects all lines containg `abc`, which starts and ends of any sequence of any characters.
-2. Mask `abc&#42;` selects all lines beginning with `abc` and ending with any sequence of any characters.
+1. Mask `*abc*` selects all lines containg `abc`, which starts and ends of any sequence of any characters.
+2. Mask `abc*` selects all lines beginning with `abc` and ending with any sequence of any characters.
 3. Mask `abc?` selects all lines beginning with `abc` and ending with any one character.
 4. Mask `abc` selects all lines which equal to `abc` exactly.
 
